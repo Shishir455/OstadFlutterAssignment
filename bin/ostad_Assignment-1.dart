@@ -10,6 +10,10 @@ class Person {
   String address;
 
   Person(this.name, this.age, this.address);
+  @override
+ void displayRole(){
+
+  }
 
   String get getName => name;
   int get getAge => age;
