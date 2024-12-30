@@ -58,7 +58,11 @@ class Teacher extends Person{
     print("Role: Teacher");
   }
   displayCoursesTaught(){
-    print('CoursesTaught : ${CourseName}');
+    print('CoursesTaught :');
+    for(int i =0;i<CourseName.length;i++){
+      print('-${CourseName[i]}');
+    }
+
   }
 }
 
@@ -81,14 +85,14 @@ class StudentManagementSystem {
         ["Math", "Science","English"]);
 
     // Display Students info
-    print('Student Information : ');
+    print('<==================Student Information==================>');
     student.displayRole();
     print("Name: ${student.getName}");
     print('Avg Score : ${student.calculateAverageScore().toStringAsFixed(2)}');
     print('Age ${student.age}');
     print('Address : ${student.address}\n');
 
-    print('Teacher Information :');
+    print('<=================Teacher Information==================>');
 
     teacher.displayRole();
     print("Name: ${teacher.getName}");
