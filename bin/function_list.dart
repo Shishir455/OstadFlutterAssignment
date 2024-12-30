@@ -7,6 +7,7 @@ print('${res[i][j] = num[i]+num1[j]}');
     }
   }
   //print("$num \n $num1");
+  //this is github
 
 }
 void main(){
